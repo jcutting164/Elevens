@@ -26,8 +26,8 @@ public class Card {
 	}
 	
 	public int value(){
-		int value=11;
-		if(!isFaceCard()){
+		int value=1;
+		if(!isFaceCard() && !isAce()){
 			value= Integer.parseInt(kind);
 		}else if(!isAce()){
 			value= 10;
@@ -37,6 +37,12 @@ public class Card {
 	public String toString(){
 		return kind+" of "+suit;
 	}
-	
 
+	public String getSuit() {
+		return suit;
+	}
+
+	public String getKind() {
+		return kind;
+	}
 }

@@ -73,7 +73,7 @@ public class Deck {
 		return deck.remove(0);
 	}
 	public void shuffle(){
-		for(int i = 0; i<1000000000; i++){
+		for(int i = 0; i<100; i++){
 			deck.add(deck.remove((int) rand.nextInt(52) ));
 		}
 	}
